@@ -1,3 +1,6 @@
+// the definitions of my custom commands (getCarouselSelected(), clickCarouselRightArrow() and clickCarouselLeftArrow()) 
+// are located at cypress/support/commands.js
+
 describe('Restaurants Application', function() {
   beforeEach(function(){
     cy.visit('http://localhost:3000') // go to the main page
@@ -6,7 +9,7 @@ describe('Restaurants Application', function() {
   it('clicking the arrows works', function() {
     const id = 'carousel_1'
 
-    cy.getCarouselSelected(id)
+    cy.getCarouselSelected(id) 
       .should('contain', 'Sea Chain') // Sea Chain should be initially selected (in Popular Restaurants)
       .should('not.contain', 'Salt') // ...and not Salt
 
@@ -19,7 +22,7 @@ describe('Restaurants Application', function() {
     cy.getCarouselSelected(id).should('contain', 'Sea Chain') // The selected item should be Sea Chain again
   })
 
-  it.only('Online/Offline are rendered appropriately depending on the restaurant', function() {
+  it('Online/Offline are rendered appropriately depending on the restaurant', function() {
     const id = 'carousel_3'
 
     cy.getCarouselSelected(id)
