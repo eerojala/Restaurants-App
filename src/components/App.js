@@ -11,8 +11,13 @@ const App = () => {
 
   return (
     <div>
-      {data.sections.map(section => 
-        <RestaurantCarousel key={section.title} title={section.title} restaurants={section.restaurants} />
+      {data.sections.map((section, index) => 
+        <RestaurantCarousel 
+          key={section.title} 
+          id={`carousel_${index + 1}`} 
+          title={section.title} 
+          restaurants={section.restaurants} 
+        />
       )}
     </div>
   )

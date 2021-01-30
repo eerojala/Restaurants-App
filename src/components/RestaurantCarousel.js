@@ -8,10 +8,10 @@ import '@brainhubeu/react-carousel/lib/style.css';
 // Internal components
 import CarouselItem from './CarouselItem'
 
-const RestaurantCarousel = ({ title, restaurants }) => {
+const RestaurantCarousel = ({ id, title, restaurants }) => {
 
   return (
-    <div>
+    <div id={id}>
       <h1>{title}</h1>
       <Carousel 
         arrows 
