@@ -1,0 +1,13 @@
+.image { 
+  position: relative;
+  width: 100%; /* for IE 6 */
+}
+
+.overlay-text { 
+  position: absolute; 
+  top: 15%; 
+  left: 25%; 
+  width: 100%; 
+  font-size: 60px;
+  color: white;
+}
