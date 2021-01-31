@@ -2,9 +2,6 @@
 import React from 'react'
 import { Blurhash } from 'react-blurhash'
 
-// Internal CSS
-import '../css/RestaurantCarousel.css'
-
 const CarouselItem = ({ blurhash, overlayText, bottomText }) => {
   return (
     <div className="image">

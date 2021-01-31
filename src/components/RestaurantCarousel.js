@@ -8,6 +8,9 @@ import '@brainhubeu/react-carousel/lib/style.css';
 // Internal components
 import CarouselItem from './CarouselItem'
 
+// Internal CSS
+import '../css/RestaurantCarousel.css'
+
 const RestaurantCarousel = ({ id, title, restaurants }) => {
 
   return (
