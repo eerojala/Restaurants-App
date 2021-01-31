@@ -5,23 +5,23 @@ App is running in Heroku at https://restaurant-app-eerojala.herokuapp.com/
 
 ### Instructions
 #### Installalling and running the app
-1. Clone this repository with ```git clone git@github.com:eerojala/Restaurants-App.git``` or download the zip file in the releases
+1. Clone this repository with ```git clone git@github.com:eerojala/Restaurants-App.git``` or download the zip file in the releases tab of the github page
 2. After cloning/unzipping the project navigate to it's folder with a command line
 3. Run ```npm install``` to install the dependencies
 4. Run the app with ```npm start```
 5. The app should open up in http://localhost:3000
 
 #### Running the tests
-This application has a few cypress tests. To run them, do the following:
-1. After installing the application start the app with ```npm start```
-2. Open up another command line and navigate to the project folder
-3. Run cypress with ```npm run cypress:open``` This will open up the cypress client (it might take nearly half a minute during first startup)
+This application has a few cypress tests. To run them, do the following after navigating to the project folder with a comand line:
+1. After installing the application start it with ```npm start``` 
+2. While the app is running open up another command line instance and navigate to the project folder
+3. Run cypress with ```npm run cypress:open```  with the newer command line that is NOT running the application. This will open up the cypress client (it might take nearly half a minute during first startup)
 4. Select your preferred browser on the upper right corner
 5. Click 'Run 1 integration spec'
-6. This will open up a new browser instance and run the test
+6. This will open up a new browser instance and run the tests
 7. In the browser you can click on the tests in the left panel to see details
 
-The tests are located at cypress/integration/restaurants_app.specs.js on the project folder
+The test code is located at cypress/integration/restaurants_app.specs.js on the project folder
 
 ### External Libraries used
 * brainhubeu/react-carousel (https://github.com/brainhubeu/react-carousel)
